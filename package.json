@@ -1,0 +1,15 @@
+{
+  "name": "squarespace-plugins",
+  "version": "1.0.0",
+  "description": "A collection of Squarespace plugins by Excito LLC. Designed for photographers and Squarespace users, enhancing their digital experiences.",
+  "repository": "https://github.com/Excito-LLC/squarespace-plugins.git",
+  "author": "Malchiel Daniel Rodrigues <daniel@excitollc.com>",
+  "license": "GPL-3.0-only",
+  "private": true,
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
