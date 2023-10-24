@@ -5,7 +5,6 @@
   "repository": "https://github.com/Excito-LLC/squarespace-plugins.git",
   "author": "Malchiel Daniel Rodrigues <daniel@excitollc.com>",
   "license": "GPL-3.0-only",
-  "private": true,
   "scripts": {
     "test": "jest"
   },

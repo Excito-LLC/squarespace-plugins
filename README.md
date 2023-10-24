@@ -25,7 +25,7 @@ These plugins are licensed under the GPL (General Public License). In simple wor
 ## 💌 Connect with Us:
 
 We're more than just a company; we're a community. For questions, feedback, or just to say hello:
-- 🌐 Visit our [website](YOUR_WEBSITE_LINK).
-- 📬 Drop us an email at [info@excitollc.com](mailto:info@excito.com).
+- 🌐 Visit our [website](https://excitollc.com).
+- 📬 Drop us an email at [info@excitollc.com](mailto:info@excitollc.com).
 
 Remember, creativity has no boundaries. Here's to making the web a beautiful space together!
