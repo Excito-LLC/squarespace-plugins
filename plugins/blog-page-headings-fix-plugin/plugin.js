@@ -73,7 +73,8 @@
     const observer = new MutationObserver(mutations => {
       mutations.forEach(mutation => {
         if (mutation.addedNodes.length) {
-          const addedElements = Array.from(mutation.addedNodes).filter(node => node.tagName === 'H1');
+          console.log(mutation.addedNodes)
+          const addedElements = Array.from(mutation.addedNodes).filter(node => node.tagName === 'H1' && node.getAttribute("class") && node.getAttribute("class").split(" ").some(cls => cls === "blog-title"));
           addedElements.forEach(fixIndividualHeading);
         }
       });
