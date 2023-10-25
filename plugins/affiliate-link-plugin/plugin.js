@@ -103,7 +103,15 @@ function parseAndModifyAnchorGeneric(href, anchor) {
   }
 
   // Only init when in browser (and not in Jest)
-  if (typeof window !== 'undefined') init();
+  if (typeof window !== 'undefined') {
+    if (document.readyState !== 'loading') {
+      init();
+    } else {
+      document.addEventListener('DOMContentLoaded', function () {
+        init();
+      });
+    }
+  }
 
 })();
 
