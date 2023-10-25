@@ -15,17 +15,29 @@
  * along with this program. If not, see <https://www.gnu.org/licenses/>.
  */
 
-
-
 // IIFE (Immediately Invoked Function Expression) / Self-Executing Anonymous Function
 // Preserves global scope
 (function () {
+  var PROVIDED_CONFIG = typeof EXC_BLOG_PAGE_HEADINGS_PLUGIN_CONFIG !== 'undefined' ? EXC_BLOG_PAGE_HEADINGS_PLUGIN_CONFIG : {};
+  var DEFAULT_CONFIG = {
+    fixAnimationBug: false,
+  };
+  var PLUGIN_CONFIG = Object.assign({}, DEFAULT_CONFIG, PROVIDED_CONFIG);
+
   function fixIndividualHeading(original) {
     var newElement = document.createElement('h2');
 
     // Copy over attributes from the original to the new element
     for (var i = 0; i < original.attributes.length; i++) {
       var attr = original.attributes[i];
+      if (PLUGIN_CONFIG.fixAnimationBug) {
+        if (attr.name = "class") {
+          // Hack to remove 'pre' classes that might block animating in
+          const value = attr.value.split(' ').filter(className => !className.startsWith('pre')).join(' ');
+          newElement.setAttribute(attr.name, value);
+          continue;
+        }
+      }
       newElement.setAttribute(attr.name, attr.value);
     }
 

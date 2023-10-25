@@ -30,6 +30,23 @@ Welcome to the **Squarespace Blog Page Headings Fix Plugin** by Excito LLC! This
 
 That's it! You're all set. 🎉
 
+---
+
+#### Animation / Missing Header Bug
+
+The plugin might behavior strangely if you have animations enabled for your website. After including it, check to see if your titles appear. If they don't, you can either disable animations on Squarespace or use the following code instead (this will disable the hiding part of the animation on the titles that are replaced/added).
+```html
+<!-- Excito LLC | License: https://excitollc.com/squarespace-plugins/squarespace-blog-page-headings-fix-plugin -->
+<script>
+   var EXC_BLOG_PAGE_HEADINGS_PLUGIN_CONFIG = {
+      fixAnimationBug: true,
+   };
+</script>
+<script src="https://cdn.jsdelivr.net/gh/Excito-LLC/squarespace-plugins@main/plugins/blog-page-headings-fix-plugin/plugin.min.js"></script>
+```
+
+
+
 
 
 ### Our Commitment to Creatives:
