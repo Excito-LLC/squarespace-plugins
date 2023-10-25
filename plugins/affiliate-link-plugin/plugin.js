@@ -68,7 +68,8 @@ function parseAndModifyAnchorGeneric(href, anchor) {
 (function () {
   function parseAndModifyAnchor(anchor) {
     const href = anchor.getAttribute('href');
-
+    // Safety check
+    if (!href) return anchor;
     return parseAndModifyAnchorGeneric(href, anchor);
   }
 
