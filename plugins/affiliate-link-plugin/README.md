@@ -24,7 +24,7 @@ Welcome to the **Squarespace Affiliate Link Plugin** by Excito LLC! This tool is
    - Copy the below code.
    ```html
    <!-- Excito LLC | License: https://excitollc.com/squarespace-plugins/squarespace-affiliate-link-plugin -->
-   <script src="https://cdn.jsdelivr.net/gh/Excito-LLC/squarespace-plugins@latest/affiliate-link-plugin/plugin.js"></script>
+   <script src="https://cdn.jsdelivr.net/gh/Excito-LLC/squarespace-plugins@main/plugins/affiliate-link-plugin/plugin.min.js"></script>
    ```
    - Add it to your [footer using website code injection](https://support.squarespace.com/hc/en-us/articles/205815908-Using-code-injection?platform=v6&websiteId=648b5b11288f901493ae95af#toc-add-code-to-code-injection) or to [a specific collection or page](https://support.squarespace.com/hc/en-us/articles/205815908-Using-code-injection?platform=v6&websiteId=648b5b11288f901493ae95af#toc-per-page-code-injection). If you do this with code injection, you only need to do it once!
 
