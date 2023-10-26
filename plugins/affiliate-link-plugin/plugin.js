@@ -51,11 +51,11 @@ function parseAndModifyAnchorGeneric(href, anchor) {
       const relParam = queryParams.get('rel');
       const targetParam = queryParams.get('target');
 
-      if (relParam !== null) {
+      if (relParam !== null && anchor.rel != relParam) {
         anchor.rel = relParam;
       }
 
-      if (targetParam !== null) {
+      if (targetParam !== null & anchor.target != targetParam) {
         anchor.target = targetParam;
       }
     }
@@ -85,19 +85,21 @@ function parseAndModifyAnchorGeneric(href, anchor) {
 
     // Observe mutations in the document to handle newly added anchor tags
     const observer = new MutationObserver(mutations => {
+      observer.disconnect();
       mutations.forEach(mutation => {
         if (mutation.addedNodes.length) {
           const addedAnchors = Array.from(mutation.addedNodes).filter(node => node.tagName === 'A');
           addedAnchors.forEach(parseAndModifyAnchor);
         }
       });
+      observer.observe(targetNode, config);
     });
 
     // Define the target node (the entire document)
     const targetNode = document.documentElement;
 
     // Configuration for the observer (observe changes to child elements)
-    const config = { childList: true, subtree: true };
+    const config = { childList: true, subtree: true, attributeFilter: ["href"] };
 
     // Start observing the document for changes
     observer.observe(targetNode, config);
