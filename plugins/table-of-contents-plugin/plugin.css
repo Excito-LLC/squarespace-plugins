@@ -39,11 +39,12 @@ html {
   scroll-behavior: smooth;
 }
 
-.content-wrapper {
-  display: flex;
-  flex-direction: row;
+@media (min-width: 1000px) {
+  article .content-wrapper {
+    display: flex;
+    flex-direction: row;
+  }
 }
-
 .exc-toc-container {
   order: -1;
   flex: 0 0 auto;
