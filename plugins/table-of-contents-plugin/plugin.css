@@ -125,9 +125,8 @@ html {
 @media screen and (max-width: 999px) {
   .exc-toc-container {
     display: block;
-    position: fixed;
-    top: auto;
-    bottom: 0;
+    position: absolute;
+    top: 100vh;
     height: auto;
     /* max-height: calc(100% - 300px); */
     width: 100vw;

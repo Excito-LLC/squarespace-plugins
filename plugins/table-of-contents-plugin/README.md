@@ -47,7 +47,7 @@ Welcome to the **Squarespace Table of Contents Plugin** by Excito LLC! This tool
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Excito-LLC/squarespace-plugins@main/plugins/table-of-contents-plugin/plugin.min.css" />
    <script src="https://cdn.jsdelivr.net/gh/Excito-LLC/squarespace-plugins@main/plugins/table-of-contents-plugin/plugin.min.js"></script>
    ```
-   - Add it to your [blog page header code (settings icon for blog page -> advanced -> Page Footer Code Injection)](https://support.squarespace.com/hc/en-us/articles/205815908-Using-code-injection?platform=v6&websiteId=648b5b11288f901493ae95af#toc-per-page-code-injection) or use a [code block](https://support.squarespace.com/hc/en-us/articles/206543167-Code-blocks) on the blog page. Note this is your blog posts page, not the individual collections page.
+   - Add it to your [blog page header code (settings icon for blog page -> advanced -> Post Blog Item Code Injection)](https://support.squarespace.com/hc/en-us/articles/205815908-Using-code-injection?platform=v6&websiteId=648b5b11288f901493ae95af#toc-per-page-code-injection) or use a [code block](https://support.squarespace.com/hc/en-us/articles/206543167-Code-blocks) on the blog page. Note this is your blog posts page, not the individual collections page.
 
 That's it! You're all set. 🎉
 
