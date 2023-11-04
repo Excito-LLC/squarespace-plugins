@@ -64,14 +64,14 @@ The Excito LLC Blog Page Headings Fix Plugin is licensed under the General Publi
 - **Freedom to Share Changes:** Share any improvements or derivative works with others. Any distributed derivative work must also be licensed under the GPL.
 
 
-For the full license details, please check [here](https://excitollc.com/squarespace-plugins/squarespace-affiliate-link-plugin) or the [license file](../LICENSE) of the repository.
+For the full license details, please check [here](https://www.excitollc.com/squarespace-plugins/squarespace-blog-page-headings-fix-plugin) or the [license file](../LICENSE) of the repository.
 
 ## Gratitude & Attribution: 
-While not mandatory, we kindly ask that if you benefit from our plugin, consider linking back to [plugin on our website](https://excitollc.com/squarespace-plugins/squarespace-affiliate-link-plugin). It's a small gesture that helps us continue our journey.
+While not mandatory, we kindly ask that if you benefit from our plugin, consider linking back to [plugin on our website](https://www.excitollc.com/squarespace-plugins/squarespace-blog-page-headings-fix-plugin). It's a small gesture that helps us continue our journey.
 
 ## Stay Updated!
 
-Want to receive updates for this plugin? [Subscribe with your email address](https://excitollc.com/squarespace-plugins/squarespace-affiliate-link-plugin).
+Want to receive updates for this plugin? [Subscribe with your email address](https://www.excitollc.com/squarespace-plugins/squarespace-blog-page-headings-fix-plugin).
 
 
 
@@ -101,4 +101,4 @@ If you have any questions, feedback, or just wish to share your creative journey
 - 🌐 Check out our [website](YOUR_WEBSITE_LINK).
 - 📬 Email us at [info@excito.com](mailto:info@excito.com).
 
-Thank you for choosing Excito's Affiliate Link Plugin for Squarespace. Feel free to reach out for any queries, feedback, or just to say hello! 📸❤️ Keep shining and creating! 💡
+Thank you for choosing Excito's Plugin for Squarespace. Feel free to reach out for any queries, feedback, or just to say hello! 📸❤️ Keep shining and creating! 💡
