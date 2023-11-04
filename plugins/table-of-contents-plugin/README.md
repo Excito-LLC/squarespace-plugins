@@ -23,6 +23,28 @@ Welcome to the **Squarespace Table of Contents Plugin** by Excito LLC! This tool
    - Copy the below code.
    ```html
    <!-- Excito LLC | License: https://excitollc.com/squarespace-plugins/squarespace-table-of-contents-plugin -->
+   <script>
+      const EXC_BLOG_PAGE_TOC_PLUGIN_CONFIG = {
+        // The plugin allows you to easily set the color of the Table of Contents section
+        // by default it takes the colors of the announement bar
+        // but it can be set to any of the 10 theme color categories
+        theme: null, // "null", "white", "white-bold", "light", "light-bold", "bright-inverse", "bright", "dark", "dark-bold", "black", "black-bold" (correspond to the colors in the Squarespace editor)
+        outlineHeaderName: "Outline", // The title at the top of the Table of Contents
+        scope: "article", // "article" if you only want the headers in the post / "body" if you want all headers
+        // Which headers to include in the outline (default is h1 and h2)
+        headers: {
+            h1: true,
+            h2: true,
+            h3: false,
+            h4: false,
+            h5: false,
+            h6: false
+        },
+      };
+   </script>
+   <!-- You do not have to include jQuery if you have already included it in the full website code injection -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Excito-LLC/squarespace-plugins@main/plugins/table-of-contents-plugin/plugin.min.css" />
    <script src="https://cdn.jsdelivr.net/gh/Excito-LLC/squarespace-plugins@main/plugins/table-of-contents-plugin/plugin.min.js"></script>
    ```
    - Add it to your [blog page header code (settings icon for blog page -> advanced -> Page Footer Code Injection)](https://support.squarespace.com/hc/en-us/articles/205815908-Using-code-injection?platform=v6&websiteId=648b5b11288f901493ae95af#toc-per-page-code-injection) or use a [code block](https://support.squarespace.com/hc/en-us/articles/206543167-Code-blocks) on the blog page. Note this is your blog posts page, not the individual collections page.
