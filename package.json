@@ -9,6 +9,11 @@
     "test": "jest"
   },
   "devDependencies": {
-    "jest": "^29.7.0"
+    "@types/jquery": "^3.5.25",
+    "jest": "^29.7.0",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "jquery": "^3.7.1"
   }
 }
