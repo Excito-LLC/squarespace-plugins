@@ -129,7 +129,7 @@ html {
     bottom: 0;
     height: auto;
     /* max-height: calc(100% - 300px); */
-    width: 100%;
+    width: 100vw;
     max-width: none;
     z-index: 99999999;
     transition: all 0.15s;
