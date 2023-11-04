@@ -16,7 +16,7 @@ This monorepo consists of various plugins tailored for Squarespace. Each plugin 
 
 ## 🛠 For Developers:
 
-Interested in contributing? We'd be thrilled to have you! Please refer to the specific plugin's README for detailed technical information and guidelines for contributions.
+Interested in contributing? We'd be thrilled to have you! Please refer to the specific plugin's README for detailed technical information and guidelines for contributions. The final code and README is in the `plugins` folder, but the source code is in the `src` folder.
 
 ## 📜 License:
 
