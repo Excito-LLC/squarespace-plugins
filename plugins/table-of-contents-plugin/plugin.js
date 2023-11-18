@@ -106,7 +106,7 @@ var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
             var encoding = encodeURIComponent(elm.innerText.replaceAll(" ", "-").replace(/[^a-zA-Z0-9-_]/g, ''));
             var attempt = encoding;
             var counter = 1;
-            while (conflictSet.has(attempt)) {
+            while (counter && conflictSet.has(attempt)) {
                 attempt = encoding + "-" + counter;
                 counter++;
             }

@@ -119,7 +119,7 @@ declare var EXC_BLOG_PAGE_TOC_PLUGIN_CONFIG: Partial<CONFIG>;
             let encoding = encodeURIComponent(elm.innerText.replaceAll(" ", "-").replace(/[^a-zA-Z0-9-_]/g, ''));
             let attempt = encoding;
             let counter = 1;
-            while (conflictSet.has(attempt)) {
+            while (counter && conflictSet.has(attempt)) {
                 attempt = encoding + "-" + counter;
                 counter++;
             }
