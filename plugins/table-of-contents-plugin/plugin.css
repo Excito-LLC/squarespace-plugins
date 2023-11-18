@@ -35,6 +35,12 @@
   color: var(--paragraphMediumColor);
 }
 
+@media screen and (max-width: 767px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+}
 html {
   scroll-behavior: smooth;
 }
@@ -125,8 +131,9 @@ html {
 @media screen and (max-width: 999px) {
   .exc-toc-container {
     display: block;
-    position: absolute;
-    top: 100vh;
+    position: fixed;
+    top: auto;
+    bottom: 0;
     height: auto;
     /* max-height: calc(100% - 300px); */
     width: 100vw;

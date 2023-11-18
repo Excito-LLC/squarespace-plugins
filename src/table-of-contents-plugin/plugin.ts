@@ -121,6 +121,7 @@ declare var EXC_BLOG_PAGE_TOC_PLUGIN_CONFIG: Partial<CONFIG>;
             let counter = 1;
             while (conflictSet.has(attempt)) {
                 attempt = encoding + "-" + counter;
+                counter++;
             }
             conflictSet.add(attempt);
             elm.id = attempt;
