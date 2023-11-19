@@ -107,8 +107,11 @@ var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
             var attempt = encoding;
             var counter = 1;
             while (counter && conflictSet.has(attempt)) {
-                attempt = encoding + "-" + counter;
-                counter++;
+                // attempt = encoding + "-" + counter;
+                // counter++;
+                var temp = encoding + "-" + counter;
+                attempt = temp;
+                counter += 1;
             }
             conflictSet.add(attempt);
             elm.id = attempt;
