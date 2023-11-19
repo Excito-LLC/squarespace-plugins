@@ -105,13 +105,9 @@ var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
             //$(this).attr("id", "heading-" + index);
             var encoding = encodeURIComponent(elm.innerText.replaceAll(" ", "-").replace(/[^a-zA-Z0-9-_]/g, ''));
             var attempt = encoding;
-            var counter = 1;
-            while (counter && conflictSet.has(attempt)) {
-                // attempt = encoding + "-" + counter;
-                // counter++;
-                var temp = encoding + "-" + counter;
-                attempt = temp;
-                counter += 1;
+            for (var counter = 1; conflictSet.has(attempt); counter++) {
+                attempt = encoding + "-" + counter;
+                counter++;
             }
             conflictSet.add(attempt);
             elm.id = attempt;

@@ -118,13 +118,9 @@ declare var EXC_BLOG_PAGE_TOC_PLUGIN_CONFIG: Partial<CONFIG>;
             //$(this).attr("id", "heading-" + index);
             let encoding = encodeURIComponent(elm.innerText.replaceAll(" ", "-").replace(/[^a-zA-Z0-9-_]/g, ''));
             let attempt = encoding;
-            let counter = 1;
-            while (counter && conflictSet.has(attempt)) {
-                // attempt = encoding + "-" + counter;
-                // counter++;
-                let temp = encoding + "-" + counter;
-                attempt = temp;
-                counter += 1;
+            for (let counter = 1; conflictSet.has(attempt); counter++) {
+                attempt = encoding + "-" + counter;
+                counter++;
             }
             conflictSet.add(attempt);
             elm.id = attempt;
